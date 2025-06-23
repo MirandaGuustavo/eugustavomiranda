@@ -1,0 +1,122 @@
+@charset "UTF-8";
+/*IMPORTANDO FONTES DO GOOGLE FONTES*/
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+/*CONFIGURANDO VARIÁVEIS PARA AS FONTES*/
+:root {
+
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: Sriracha, sans-serif;
+    --fonte3: Passion One, sans-serif;
+}
+
+html, body{
+
+    font-family: var(--fonte1);
+    text-align: center;
+    font-size: 20px;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+    .seletor-do-card:hover {
+        transform: scale(1.5);
+     }
+}
+
+header, footer {
+    
+    background: #000000;
+    color: #fff;
+    font-family: var(--fonte3);
+    text-align: center;
+    padding: 10px 0;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+    font-family: var(--fonte3);
+}
+
+a {
+    text-decoration: none;
+    color: #e4b007;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+h1, h2, h3 {
+    color: #000000;
+    font-family: var(--fonte2);
+}
+/* ADICIONAR EFEITO DE HOVER */
+.projeto {
+    width: 30%;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.1);
+    padding: 10px;
+    transition: 0.2s all ease-in;
+    cursor: pointer;
+}
+.projeto:hover {
+    transform: scale(1.05);
+}
+
+.container {
+      background-color: #fff;
+      max-width: 600px;
+      padding: 30px 40px;
+      border-radius: 10px;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+      line-height: 1.6;
+      font-size: 1.1rem;
+      text-align: justify;
+      margin: auto;
+    }
+
+.centralizado {
+    display:flexbox;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    max-width: 600px;
+      padding: 30px 40px;
+      border-radius: 10px;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+      text-align: center;
+      margin:auto;
+}
+
+.formacao-lista {
+    font-family: var(--fonte2);
+    list-style-type: none; /* Remove as bolinhas padrão */
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.formacao-lista li {
+    margin-bottom: 20px; /* Espaço entre os itens */
+    padding-bottom: 15px;
+    border-bottom: 1px solid #ddd; /* Linha fina separando cada formação */
+}
+
+.formacao-lista li:last-child {
+    border-bottom: none; /* Remove a linha do último item */
+}
+
+.formacao-lista strong {
+    font-weight: 700;
+    color: #333;
+    font-size: 1.2rem;
+}
